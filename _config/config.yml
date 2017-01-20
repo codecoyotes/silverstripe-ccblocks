@@ -1,0 +1,10 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+
+Block:
+  extensions:
+    - CCBlockExtension

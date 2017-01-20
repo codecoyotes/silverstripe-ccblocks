@@ -1,0 +1,20 @@
+{
+  "name": "codecoyotes/silverstripe-ccblocks",
+  "description": "Some blocks for the block module by codecoyotes",
+  "type": "silverstripe-module",
+  "keywords": [
+	"silverstripe",
+	"blocks"
+  ],
+  "authors": [
+	{
+	  "name": "CodeCoyotes"
+	}
+  ],
+  "extra": {
+	"installer-name": "cc-blocks"
+  },
+  "require": {
+	"sheadawson/silverstripe-blocks": "^1.1"
+  }
+}
