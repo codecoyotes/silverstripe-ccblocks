@@ -2,28 +2,28 @@
 
 class CTABlock extends Block {
 
-	public function singular_name()
-	{
-		return _t('CTABlock.SINGULARNAME', 'CTA Block');
-	}
+		public function singular_name() {
+				return _t('CTABlock.SINGULARNAME', 'CTA Block');
+		}
 
-	public function plural_name()
-	{
-		return _t('CTABlock.PLURALNAME', 'CTA Blocks');
-	}
+		public function plural_name() {
+				return _t('CTABlock.PLURALNAME', 'CTA Blocks');
+		}
 
-	private static $db = array(
-
-	);
-
-	public function fieldLabels($includeRelations = true)
-	{
-		return array_merge(
-			parent::fieldLabels($includeRelations),
-			array(
-				'Content' => _t('Block.Content', 'Content'),
-			)
+		private static $db = array(
+				'MainLine' => 'Varchar(255)',
+				'SubLine' => 'Varchar(255)'
 		);
-	}
+		private static $has_one = array(
+				'Button' => 'Link'
+		);
+
+		public function fieldLabels($includeRelations = true) {
+				$labels = parent::fieldLabels($includerelations);
+				$labels['MainLine'] = _t('CTABlock.db_MainLine', 'Main line');
+				$labels['SubLine'] = _t('CTABlock.db_SubLine', 'Sub line');
+				$labels['Button'] = _t('CTABlock.has_one_Button', 'Button');
+				return $labels;
+		}
 
 }
