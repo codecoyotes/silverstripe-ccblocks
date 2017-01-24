@@ -8,3 +8,7 @@ After:
 Block:
   extensions:
     - CCBlockExtension
+
+Link:
+  extensions:
+    - LinkExtension
