@@ -1,3 +1,6 @@
+<% if $ShowTitle %>
+	<h2>$Title</h2>
+<% end_if %>
 <div class="row">
     <% loop $USPCols %>
         <div class="$Top.ColClass">

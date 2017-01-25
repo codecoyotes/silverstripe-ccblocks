@@ -1,5 +1,5 @@
 <div>
-	<% if $Title %>
+	<% if $ShowTitle %>
 		<h3>$Title</h3>
 	<% end_if %>
 	<% if $Content %>

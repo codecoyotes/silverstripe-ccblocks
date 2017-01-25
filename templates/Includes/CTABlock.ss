@@ -1,4 +1,7 @@
 <div>
+    <% if $ShowTitle %>
+		<h2>$Title</h2>
+    <% end_if %>
     <% if $MainLine %>
         <h1>$MainLine</h1>
     <% end_if %>

@@ -1,3 +1,6 @@
+<% if $ShowTitle %>
+	<h2>$Title</h2>
+<% end_if %>
 <div class="slider">
 	<div class="slider-wrapper">
         <% loop $Slides %>
