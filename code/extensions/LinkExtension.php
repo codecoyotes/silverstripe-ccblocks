@@ -8,7 +8,7 @@ class LinkExtension extends DataExtension {
 
 	public function updateCMSFields(FieldList $fields)
 	{
-		$buttonClasses = Config::inst()->get('HtmlEditorField_Toolbar', 'linkstyles');
+		$buttonClasses = Config::inst()->get('CCBlocks', 'linkclasses');
 		if($buttonClasses){
 			$fields->addFieldToTab('Root.Main', new DropdownField('ButtonClasses', null, $buttonClasses));
 		}

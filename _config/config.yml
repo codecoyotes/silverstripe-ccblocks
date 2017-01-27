@@ -12,3 +12,42 @@ Block:
 Link:
   extensions:
     - LinkExtension
+
+HtmlEditorField_Toolbar:
+  extensions:
+    - HtmlEditorField_ToolbarExtension
+
+CCBlocks:
+  linkclasses:
+    '': 'Link'
+    'btn': 'Default button'
+    'btn btn-primary': 'Primary button'
+    'btn btn-secondary': 'Secondary button'
+    'btn btn-tertiary': 'Tertiary button'
+    'btn btn-white': 'White button'
+    'btn btn-light': 'Light button'
+    'btn btn-dark': 'Dark button'
+    'btn btn-black': 'Black button'
+    'btn btn-ghost': 'Default ghost button'
+    'btn btn-ghost btn-primary': 'Primary ghost button'
+    'btn btn-ghost btn-secondary': 'Secondary ghost button'
+    'btn btn-ghost btn-tertiary': 'Tertiary ghost button'
+    'btn btn-ghost btn-white': 'White ghost button'
+    'btn btn-ghost btn-light': 'Light ghost button'
+    'btn btn-ghost btn-dark': 'Dark ghost button'
+    'btn btn-ghost btn-black': 'Black ghost button'
+  backgroundcolorclasses:
+    '': 'None'
+    'bg-primary': 'Primary'
+    'bg-secondary': 'Secondary'
+    'bg-tertiary': 'Tertiary'
+    'bg-white': 'White'
+    'bg-light': 'Light'
+    'bg-dark': 'Dark'
+    'bg-black': 'Black'
+  backgroundopacityclasses:
+    '': 'None'
+    'bg-opacity-20': 'Opacity 20'
+    'bg-opacity-40': 'Opacity 40'
+    'bg-opacity-60': 'Opacity 60'
+    'bg-opacity-80': 'Opacity 80'
