@@ -7,7 +7,8 @@ class CCBlockExtension extends DataExtension
 		'ShowTitle' => 'Boolean',
 		'BackgroundColorClass' => 'Varchar',
 		'BackgroundOpacityClass' => 'Varchar',
-		'BackgroundAltClass' => 'Boolean'
+		'BackgroundAltClass' => 'Boolean',
+		'FullWidth' => 'Boolean'
 	);
 
 	private static $has_one = array(

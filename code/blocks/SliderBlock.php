@@ -3,6 +3,11 @@
 class SliderBlock extends Block
 {
 
+	private static $db = array(
+		'ShowArrows' => 'Boolean',
+		'ShowPaging' => 'Boolean'
+	);
+
 	public function singular_name()
 	{
 		return _t('SliderBlock.SINGULARNAME', 'Slider Block');
@@ -47,7 +52,8 @@ class SliderBlockSlider extends DataObject
 	private static $db = array(
 		'Title' => 'Varchar(255)',
 		'SubTitle' => 'Varchar(255)',
-		'Sort' => 'Int'
+		'Sort' => 'Int',
+		'OverlayPosition' => 'Varchar'
 	);
 	private static $has_one = array(
 		'SliderBlock' => 'SliderBlock',
@@ -58,6 +64,19 @@ class SliderBlockSlider extends DataObject
 		'Title'
 	);
 	private static $default_sort = 'Sort';
+	private static $overlay_positions = array(
+		'right-top' => 'Right top',
+		'right-center' => 'Right center',
+		'right-bottom' => 'Right bottom',
+
+		'left-top' => 'Left top',
+		'left-center' => 'Left center',
+		'left-bottom' => 'Left bottom',
+
+		'center-top' => 'Center top',
+		'center-bottom' => 'Center bottom',
+		'' => 'Center center'
+	);
 
 	public function getCMSFields()
 	{
@@ -65,6 +84,7 @@ class SliderBlockSlider extends DataObject
 		$fields->removeByName('SliderBlockID');
 		$fields->removeByName('Sort');
 		$fields->addFieldToTab('Root.Main', new LinkField('ButtonID', 'Button'));
+		$fields->addFieldToTab('Root.Main', new DropdownField('OverlayPosition', 'Overlay position', self::$overlay_positions));
 		return $fields;
 	}
 
