@@ -4,7 +4,7 @@
 <div class="row">
     <% loop $USPCols %>
         <div class="$Top.ColClass">
-            <ul>
+            <ul class="list">
             <% loop $USPs %>
                 <li><i class="$Top.IconClass"></i> $USP</li>
             <% end_loop %>
