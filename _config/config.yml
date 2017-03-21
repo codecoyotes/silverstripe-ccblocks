@@ -36,6 +36,12 @@ CCBlocks:
     'btn btn-ghost btn-light': 'Light ghost button'
     'btn btn-ghost btn-dark': 'Dark ghost button'
     'btn btn-ghost btn-black': 'Black ghost button'
+  linksizeclasses:
+    'btn-xs': 'XS'
+    'btn-sm': 'SM'
+    'btn-md': 'MD'
+    'btn-lg': 'LG'
+    'btn-xl': 'XL'
   backgroundcolorclasses:
     '': 'None'
     'bg-primary': 'Primary'

@@ -15,7 +15,9 @@ class CTABlock extends Block
 
 	private static $db = array(
 		'MainLine' => 'Varchar(255)',
-		'SubLine' => 'Varchar(255)'
+		'SubLine' => 'Varchar(255)',
+		'IconClasses' => 'Varchar',
+		'BgClass' => 'Varchar'
 	);
 	private static $has_one = array(
 		'Button' => 'Link'
@@ -27,6 +29,8 @@ class CTABlock extends Block
 		$labels['MainLine'] = _t('CTABlock.db_MainLine', 'Main line');
 		$labels['SubLine'] = _t('CTABlock.db_SubLine', 'Sub line');
 		$labels['Button'] = _t('CTABlock.has_one_Button', 'Button');
+		$labels['IconClasses'] = _t('CTABlock.db_IconClasses', 'Icon classes');
+		$labels['BgClass'] = _t('CTABlock.db_BgClass', 'Background class');
 		return $labels;
 	}
 
