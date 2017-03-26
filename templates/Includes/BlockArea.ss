@@ -2,10 +2,15 @@
     <% loop BlockArea %>
 		<div class="block $BlockSize $BackgroundColorClass $BackgroundOpacityClass<% if $BackgroundAltClass %> bg-alt<% end_if %><% if $BackgroundImage %> visual visual-lg visual-overlay parallax<% end_if %>"
 				 <% if $BackgroundImage %>style="background-image: url('$BackgroundImage.URL')"<% end_if %>>
-
-				 <div class="container<% if $FullWidth %>-fluid<% end_if %>">
-            $BlockHTML
+				 <% if $BackgroundImage %>
+				 <div class="visual-content">
+						<% end_if %>
+						<div class="container<% if $FullWidth %>-fluid<% end_if %>">
+								$BlockHTML
+						</div>
+						<% if $BackgroundImage %>
 				</div>
-				<% end_loop %>
+				<% end_if %>
 		</div>
+		<% end_loop %>
 </div>

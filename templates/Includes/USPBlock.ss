@@ -1,14 +1,14 @@
 <% if $ShowTitle %>
-	<h2>$Title</h2>
+<h2 class="text-center">$Title</h2>
 <% end_if %>
 <div class="row">
     <% loop $USPCols %>
-        <div class="$Top.ColClass">
-            <ul class="list">
+		<div class="$Top.ColClass">
+				<ul class="list heading-sm">
             <% loop $USPs %>
-                <li><i class="$Top.IconClass"></i> $USP</li>
+						<li><i class="$Top.IconClass color-success"></i> $USP</li>
             <% end_loop %>
-			</ul>
-        </div>
+				</ul>
+		</div>
     <% end_loop %>
 </div>
